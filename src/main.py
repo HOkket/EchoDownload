@@ -21,7 +21,8 @@ print("║               Desenvolvido em                 ║")
 print("║  https://github.com/HOkket/EchoDownload.git   ║")
 print("╚═══════════════════════════════════════════════╝\033[0m")
 
-if __name__ == "__main__":
+
+def menu():
     resposta = inquirer.select(
         message="Escolha o tipo de download que deseja fazer:",
         choices=["Vídeo Unico", "Áudio", "Playlist", "Sair"]
@@ -34,12 +35,14 @@ if __name__ == "__main__":
         EchoDownload.download_playlist()
     elif resposta == "Sair":
         print("Saindo do programa...")
+        # Fim do programa
+        print("\033[94m╔═══════════════════════════════════════════════╗")
+        print("║       Obrigado por usar o EchoDownload!       ║")
+        print("╚═══════════════════════════════════════════════╝\033[0m")
+        print("\033[0m")
+        print("Se esse programa te ajudou, considere avaliar o projeto em:")
+        print("       https://github.com/HOkket/EchoDownload.git ")
+        exit()
 
-    # Fim do programa
-    print("\033[94m╔═══════════════════════════════════════════════╗")
-    print("║       Obrigado por usar o EchoDownload!       ║")
-    print("╚═══════════════════════════════════════════════╝\033[0m")
-    print("\033[0m")
-    print("Se esse programa te ajudou, considere avaliar o projeto em:")
-    print("       https://github.com/HOkket/EchoDownload.git ")
-    exit()
+
+menu()

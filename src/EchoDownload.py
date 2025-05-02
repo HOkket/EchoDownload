@@ -1,4 +1,5 @@
 
+# EchoDownload - Download de vídeos do YouTube
 import yt_dlp as youtube_dl
 import os
 import sys
@@ -16,7 +17,6 @@ def download_video():
             print(
                 "\033[91mURL inválido. Por favor, insira um URL do YouTube válido.\033[0m")
             url = input("Digite o URL do vídeo do YouTube: ")
-
 # Define o diretório de saída com base no sistema operacional
         if sys.platform.startswith('win'):
             # Windows
@@ -30,12 +30,9 @@ def download_video():
             # Outros sistemas operacionais
             print("\033[91mSistema operacional não suportado.\033[0m")
             exit()
-
-
 # Verifica se o diretório de saída existe, se não, cria
         if not os.path.exists(output_local):
             os.makedirs(output_local)
-
 # Configurações para o yt-dlp
         ydl_opts = {
             'format': 'bestvideo+bestaudio/best',
@@ -47,8 +44,6 @@ def download_video():
         print("\033[91mIniciando o download...\033[0m")
         print(
             "\033[91mPor favor, aguarde enquanto o download está em andamento...\033[0m")
-
-
 # Usa o yt-dlp para baixar o vídeo e áudio no melhor formato disponível.
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             try:
@@ -58,8 +53,7 @@ def download_video():
                     f"\033[92mDownload concluído com sucesso! O arquivo foi salvo em: {output_local}\033[0m")
             except Exception as e:
                 print(f"Ocorreu um erro: {e}")
-
-        # Pergunta ao usuário se deseja continuar
+# Pergunta ao usuário se deseja continuar
         rodar = input("Deseja continuar? (SIM/NAO): ").strip().upper()
         if rodar == "NAO" or rodar == "N" or rodar == "nao" or rodar == "n":
             print("\033[91mSaindo do programa...\033[0m")
