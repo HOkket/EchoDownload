@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import sys
 import yt_dlp as youtube_dl
 import os
 
@@ -29,15 +28,7 @@ while rodar == "SIM" or rodar == "S" or rodar == "sim" or rodar == "s":
         url = input("Digite o URL do vídeo do YouTube: ")
 
 
-# Voltar para 'usuário_padrão' se USER não estiver definidoimport time
-
-
-def animated_download():
-    for i in range(101):
-        time.sleep(0.05)  # Simula o tempo de download
-        sys.stdout.write(
-            f"\rDownloading... [{'#' * (i // 2)}{' ' * (50 - i // 2)}] {i}%")
-        sys.stdout.flush()
+# Voltar para 'usuário_padrão' se USER não estiver definido
     usuário = os.getenv('USER', 'usuário_padrão')
     # Local onde o vídeo será salvo
     output_local = f"/home/{usuário}/Downloads"
