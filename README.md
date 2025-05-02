@@ -1,22 +1,14 @@
 # EchoDownload
 
-EchoDownload é um programa simples que permite baixar vídeos do YouTube utilizando a biblioteca yt-dlp. O programa solicita ao usuário a URL do vídeo desejado, configura as opções de download e exibe uma animação de carregamento enquanto o vídeo é baixado.
+EchoDownload é um programa simples em python3 que permite baixar vídeos do YouTube utilizando a biblioteca yt-dlp. O programa solicita ao usuário a URL do vídeo desejado, configura as opções de download e exibe uma animação de carregamento enquanto o vídeo é baixado.
 
-## Estrutura do Projeto
-
-O projeto possui os seguintes arquivos:
-
-- `src/EchoDownload.py`: Código principal do programa que utiliza a biblioteca yt-dlp para baixar vídeos do YouTube.
-- `.gitignore`: Especifica quais arquivos ou diretórios devem ser ignorados pelo Git.
-- `LICENSE`: Contém os termos da licença sob a qual o projeto é distribuído.
-- `README.md`: Documentação do projeto, incluindo informações sobre como instalar, usar e contribuir.
 
 ## Instalação
 
 Para utilizar o EchoDownload, você precisa ter o Python instalado em sua máquina. Além disso, é necessário instalar a biblioteca yt-dlp. Você pode fazer isso utilizando o seguinte comando:
 
 ```
-pip install yt-dlp
+pip install yt-dlp InquirerPy
 ```
 
 ## Uso
