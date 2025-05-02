@@ -16,7 +16,7 @@ O projeto possui os seguintes arquivos:
 Para utilizar o EchoDownload, você precisa ter o Python instalado em sua máquina. Além disso, é necessário instalar a biblioteca yt-dlp. Você pode fazer isso utilizando o seguinte comando:
 
 ```
-pip install yt-dlp tqdm
+pip install yt-dlp
 ```
 
 ## Uso
