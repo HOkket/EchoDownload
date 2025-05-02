@@ -11,7 +11,7 @@ Para utilizar o EchoDownload, você precisa ter o Python instalado em sua máqui
 pip install yt-dlp InquirerPy
 ```
 
-## Uso
+## Uso via terminal
 
 1. Clone o repositório:
    ```
