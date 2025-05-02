@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 from InquirerPy import inquirer
 import EchoDownload
-import yt_dlp as youtube_dl
-import os
 
 
 # Título do programa

@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+
+import yt_dlp as youtube_dl
+import os
 
 
 def download_video():
