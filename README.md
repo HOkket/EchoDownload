@@ -5,7 +5,8 @@ EchoDownload é um programa simples em python3 compativel com windows/linux que 
 
 ## Instalação
 
-Para utilizar o EchoDownload, você precisa ter o Python instalado em sua máquina. Além disso, é necessário instalar a biblioteca yt-dlp. Você pode fazer isso utilizando o seguinte comando:
+Voce pode baixar os binarios de Windows e Linux [AQUI!](https://github.com/HOkket/EchoDownload/releases)
+Para utilizar o EchoDownload direto do codigo fonte, você precisa ter o Python instalado em sua máquina. Além disso, é necessário instalar a biblioteca yt-dlp e InquirerPy. Você pode fazer isso utilizando o seguinte comando:
 
 ```
 pip install yt-dlp InquirerPy
