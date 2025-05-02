@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import yt_dlp as youtube_dl
 import os
 import time
@@ -8,7 +10,15 @@ print("\033[94m╔════════════════════�
 print("║        Bem-vindo ao EchoDownload!      ║")
 print("╚════════════════════════════════════════╝\033[0m")
 
+
 url = input("Digite o URL do vídeo do YouTube: ")  # URL do vídeo a ser baixado
+print("\033[93mAguarde enquanto o programa verifica o URL...\033[0m")
+# Verifica se o URL é válido
+if not url.startswith("https://youtu"):
+    print("\033[91mURL inválido. Por favor, insira um URL do YouTube válido.\033[0m")
+    exit(1)
+
+
 # Voltar para 'usuário_padrão' se USER não estiver definido
 usuário = os.getenv('USER', 'usuário_padrão')
 output_local = f"/home/{usuário}/Downloads"  # Local onde o vídeo será salvo
@@ -42,6 +52,14 @@ with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         loading_animation()  # Exibe a animação de carregamento
         ydl.download([url])
         print(
-            f"Download completed successfully. O arquivo foi salvo em: {output_local}")
+            f"\033[92mDownload concluído com sucesso! O arquivo foi salvo em: {output_local}\033[0m")
     except Exception as e:
         print(f"Ocorreu um erro: {e}")
+
+# Fim do programa
+print("\033[94m╔════════════════════════════════════════╗")
+print("║       Obrigado por usar o EchoDownload!║")
+print("╚════════════════════════════════════════╝\033[0m")
+print("\033[0m")
+
+exit(0)
