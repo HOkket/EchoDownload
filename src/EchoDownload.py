@@ -14,9 +14,9 @@ print("╚═══════════════════════�
 url = input("Digite o URL do vídeo do YouTube: ")  # URL do vídeo a ser baixado
 print("\033[93mAguarde enquanto o programa verifica o URL...\033[0m")
 # Verifica se o URL é válido
-if not url.startswith("https://youtu"):
+while not url.startswith("https://youtu.be") and not url.startswith("https://youtube.com"):
     print("\033[91mURL inválido. Por favor, insira um URL do YouTube válido.\033[0m")
-    exit(1)
+    url = input("Digite o URL do vídeo do YouTube: ")
 
 
 # Voltar para 'usuário_padrão' se USER não estiver definido
