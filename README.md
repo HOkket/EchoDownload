@@ -23,7 +23,7 @@ pip install yt-dlp InquirerPy
    ```
 3. Execute o programa:
    ```
-   python src/EchoDownload.py
+   python src/main.py
    ```
 4. Insira a URL do vídeo do YouTube que deseja baixar quando solicitado.
 
