@@ -1,3 +1,10 @@
+# Este programa é um menu interativo para o EchoDownload, um downloader de vídeos e áudios.
+# Ele permite que o usuário escolha entre baixar um vídeo único, um áudio ou uma playlist.
+# O programa é desenvolvido em Python e utiliza a biblioteca InquirerPy para criar um menu interativo.
+# O menu é exibido em um formato amigável e colorido, com opções claras para o usuário.
+# O programa também exibe informações sobre o desenvolvedor e o repositório do projeto no GitHub.
+# O EchoDownload é um projeto open-source, e o código-fonte está disponível no GitHub.
+
 
 # -*- coding: utf-8 -*-
 from InquirerPy import inquirer

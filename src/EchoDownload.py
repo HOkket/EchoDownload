@@ -1,6 +1,7 @@
 
 import yt_dlp as youtube_dl
 import os
+import sys
 
 
 def download_video():
@@ -16,11 +17,20 @@ def download_video():
                 "\033[91mURL inválido. Por favor, insira um URL do YouTube válido.\033[0m")
             url = input("Digite o URL do vídeo do YouTube: ")
 
+# Define o diretório de saída com base no sistema operacional
+        if sys.platform.startswith('win'):
+            # Windows
+            usuário = os.getenv('USERNAME', 'usuário_padrão')
+            output_local = f"C:/Users/{usuário}/Downloads"
+        elif sys.platform.startswith('linux'):
+            # Linux
+            usuário = os.getenv('USER', 'usuário_padrão')
+            output_local = f"/home/{usuário}/Downloads"
+        else:
+            # Outros sistemas operacionais
+            print("\033[91mSistema operacional não suportado.\033[0m")
+            exit()
 
-# Voltar para 'usuário_padrão' se USER não estiver definido
-        usuário = os.getenv('USER', 'usuário_padrão')
-        # Local onde o vídeo será salvo
-        output_local = f"/home/{usuário}/Downloads"
 
 # Verifica se o diretório de saída existe, se não, cria
         if not os.path.exists(output_local):
@@ -82,10 +92,19 @@ def download_audio():
             print(
                 "\033[91mURL inválido. Por favor, insira um URL do YouTube válido.\033[0m")
             url = input("Digite o URL do vídeo do YouTube: ")
-# Voltar para 'usuário_padrão' se USER não estiver definido
-        usuário = os.getenv('USER', 'usuário_padrão')
-        # Local onde o vídeo será salvo
-        output_local = f"/home/{usuário}/Downloads"
+# Define o diretório de saída com base no sistema operacional
+        if sys.platform.startswith('win'):
+            # Windows
+            usuário = os.getenv('USERNAME', 'usuário_padrão')
+            output_local = f"C:/Users/{usuário}/Downloads"
+        elif sys.platform.startswith('linux'):
+            # Linux
+            usuário = os.getenv('USER', 'usuário_padrão')
+            output_local = f"/home/{usuário}/Downloads"
+        else:
+            # Outros sistemas operacionais
+            print("\033[91mSistema operacional não suportado.\033[0m")
+            exit()
 # Verifica se o diretório de saída existe, se não, cria
         if not os.path.exists(output_local):
             os.makedirs(output_local)
@@ -146,10 +165,19 @@ def download_playlist():
             print(
                 "\033[91mURL inválido. Por favor, insira um URL do YouTube válido.\033[0m")
             url = input("Digite o URL da playlist do YouTube: ")
-# Voltar para 'usuário_padrão' se USER não estiver definido
-        usuário = os.getenv('USER', 'usuário_padrão')
-        # Local onde o vídeo será salvo
-        output_local = f"/home/{usuário}/Downloads"
+# Define o diretório de saída com base no sistema operacional
+        if sys.platform.startswith('win'):
+            # Windows
+            usuário = os.getenv('USERNAME', 'usuário_padrão')
+            output_local = f"C:/Users/{usuário}/Downloads"
+        elif sys.platform.startswith('linux'):
+            # Linux
+            usuário = os.getenv('USER', 'usuário_padrão')
+            output_local = f"/home/{usuário}/Downloads"
+        else:
+            # Outros sistemas operacionais
+            print("\033[91mSistema operacional não suportado.\033[0m")
+            exit()
 # Verifica se o diretório de saída existe, se não, cria
         if not os.path.exists(output_local):
             os.makedirs(output_local)
