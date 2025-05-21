@@ -5,6 +5,8 @@ EchoDownload é um programa simples em python3 compativel com windows/linux que 
 
 ## Instalação
 
+### Voce pode baixar os binarios de Windows e Linux
+
 <div style="display: flex; justify-content: space-around; align-items: center;">
    <a href="https://github.com/HOkket/EchoDownload">
       <img src="https://github.com/HOkket/EchoDownload/blob/main/img/WinDow.png" alt="Windows install" style="width: 45%; max-width: 200px;">
@@ -16,7 +18,7 @@ EchoDownload é um programa simples em python3 compativel com windows/linux que 
 
 ---
 
-Voce pode baixar os binarios de Windows e Linux [AQUI!](https://github.com/HOkket/EchoDownload/releases)
+Voce tambem pode baixar os binarios de Windows e Linux [AQUI!](https://github.com/HOkket/EchoDownload/releases)
 Para utilizar o EchoDownload direto do codigo fonte, você precisa ter o Python instalado em sua máquina. Além disso, é necessário instalar a biblioteca yt-dlp e InquirerPy. Você pode fazer isso utilizando o seguinte comando:
 
 ```
