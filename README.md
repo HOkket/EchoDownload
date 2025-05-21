@@ -38,7 +38,8 @@ pip install yt-dlp InquirerPy
 4. Insira a URL do vídeo do YouTube que deseja baixar quando solicitado.
 ## Falta implementar
 
- * Download de playlist em MP3
+ * Opções de diferentes tipos de saída para vídeos e áudios
+ * Uma GUI
 
 ## Contribuição
 
