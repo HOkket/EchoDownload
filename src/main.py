@@ -25,7 +25,8 @@ print("╚═══════════════════════�
 def menu():
     resposta = inquirer.select(
         message="Escolha o tipo de download que deseja fazer:",
-        choices=["Vídeo Unico", "Áudio", "Playlist", "Sair"]
+        choices=["Vídeo Unico", "Áudio", "Playlist de Videos",
+                 "Playlist de audios", "Sair"]
     ).execute()
     if resposta == "Vídeo Unico":
         EchoDownload.download_video()
@@ -33,6 +34,8 @@ def menu():
         EchoDownload.download_audio()
     elif resposta == "Playlist":
         EchoDownload.download_playlist()
+    elif resposta == "Playlist de audios":
+        EchoDownload.download_playlist_audio()
     elif resposta == "Sair":
         print("Saindo do programa...")
         # Fim do programa
