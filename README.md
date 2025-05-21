@@ -5,7 +5,7 @@ EchoDownload é um programa simples em python3 compativel com windows/linux que 
 
 ## Instalação
 
-[![Windows install](https://via.placeholder.com/150)](https://github.com/HOkket/EchoDownload)
+[![Windows install](https://github.com/HOkket/EchoDownload/blob/main/img/WinDow.png)](https://github.com/HOkket/EchoDownload)
 
 [![Linux install](https://github.com/HOkket/EchoDownload/blob/main/img/LinDow.png)](https://github.com/HOkket/EchoDownload)
 
