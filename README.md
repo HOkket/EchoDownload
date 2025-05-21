@@ -12,7 +12,7 @@ EchoDownload é um programa simples em python3 compativel com windows/linux que 
       <img src="https://github.com/HOkket/EchoDownload/blob/main/img/WinDow.png" alt="Windows install" style="width: 45%; max-width: 200px;">
    </a>
    <a href="https://github.com/HOkket/EchoDownload">
-      <img src="https://github.com/HOkket/EchoDownload/blob/main/img/LinDow.png" alt="Linux install" style="width: 45%; max-width: 200px;">
+      <img src="https://github.com/HOkket/EchoDownload/blob/main/img/LinDow.png" alt="Linux install" style="width: 44%; max-width: 200px;">
    </a>
 </div>
 
